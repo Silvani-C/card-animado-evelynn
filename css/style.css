@@ -1,0 +1,118 @@
+@charset "UTF-8";
+*{
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0; 
+}
+.h1{
+    background-image: linear-gradient(#000, #380e74);
+    text-align: center;   
+    color: #fff;  
+    font-size: 15px;
+    padding: 5px 0px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #fff;
+    background-color: #4444;
+    margin-top: -50px;
+}
+.card{
+    background-image: linear-gradient(rgba(51, 51, 51, 0.463), #151515);  
+    overflow: hidden;
+    border-radius: 16px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all.5s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    margin-left: 10px;
+}
+.card:hover{
+    background-image: linear-gradient(#572f8fa5, #380e74);
+}
+.card .img{
+    background-color:  #151515;
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .8;
+    transition: all.5s;
+    z-index: 2;
+}
+#cardImg1{
+   background-image: url(../img/eve1.jpg);
+}
+#cardImg2{
+   background-image: url(../img/eve2.jpg);
+}
+#cardImg3{
+   background-image: url(../img/eve3.jpg);
+}
+.card:hover .img{
+    opacity: 1;
+    width: 440px;
+}
+.card .img span{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.card .content{
+    padding:  0px 20px;
+    overflow: hidden;
+    height: 0;
+    transition: all .5s;
+    transform: translateY(30px);
+    opacity: 0;
+}
+.card:hover .content{
+    padding: 20px;
+    height: 260px;
+    transform: translateY(0px);
+    opacity: 1;
+}
+.card .content p{
+   margin-bottom: 0;
+}
+.card .content .title{
+    font-size: 24px;
+    font-weight: bold;
+}
+.card .content .desc{
+    font-size: 14px;
+    font-weight: 100;
+    opacity: 7;
+}
+.seta{
+    padding: 15px;
+    font-size: 28px;
+    transform: rotate(-180deg);
+    transition: all.5s;
+}
+.seta:hover{
+    transform: rotate(0);
+    transition: all.5s;
+    }
+footer{
+    background-image: linear-gradient( #380e74, #000);
+    margin: 0px;
+    padding: 10px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}

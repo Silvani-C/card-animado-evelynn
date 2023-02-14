@@ -1,0 +1,30 @@
+@media screen and (max-width: 500px) {
+body{
+    background-color: #4444;
+}
+.h1{
+   font-size:10px ;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    color: #fff;
+    background-color: #4444;
+    overflow: hidden;
+    padding-bottom: 100px;
+}
+.card{
+    margin-top: 100px;
+    margin-bottom: -70px;    
+}
+}
+@media screen and (max-width: 375px){
+    .card{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
